@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="3066" started-at="2020-03-06T14:06:35 CST" finished-at="2020-03-06T14:06:38 CST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="3066" started-at="2020-03-06T14:06:35 CST" finished-at="2020-03-06T14:06:38 CST">
+      <class name="com.perscholas.jenkins_pipeline.web_automation.IndexPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.perscholas.jenkins_pipeline.web_automation.IndexPageTest@3b088d51]" name="setUp" is-config="true" duration-ms="2724" started-at="2020-03-06T14:06:35 CST" finished-at="2020-03-06T14:06:38 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testH2Element()[pri:0, instance:com.perscholas.jenkins_pipeline.web_automation.IndexPageTest@3b088d51]" name="testH2Element" duration-ms="78" started-at="2020-03-06T14:06:38 CST" finished-at="2020-03-06T14:06:38 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testH2Element -->
+        <test-method status="PASS" signature="testIndexPageTitle()[pri:0, instance:com.perscholas.jenkins_pipeline.web_automation.IndexPageTest@3b088d51]" name="testIndexPageTitle" duration-ms="30" started-at="2020-03-06T14:06:38 CST" finished-at="2020-03-06T14:06:38 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIndexPageTitle -->
+        <test-method status="PASS" signature="shutDown()[pri:0, instance:com.perscholas.jenkins_pipeline.web_automation.IndexPageTest@3b088d51]" name="shutDown" is-config="true" duration-ms="152" started-at="2020-03-06T14:06:38 CST" finished-at="2020-03-06T14:06:38 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shutDown -->
+      </class> <!-- com.perscholas.jenkins_pipeline.web_automation.IndexPageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
