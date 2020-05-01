@@ -6,15 +6,18 @@ pipeline {
 		stage ('Compile Stage') {
 		
 			steps {
-					sh 'export PATH=$PATH:$MAVEN_HOME/bin
+				withMaven(maven : 'Maven_Apache_3_6_3') {
 					sh 'mvn clean compile'
+				}
 			}
 		}
 		
 		stage ('Testing Stage') {
 			
 			steps {
+				withMaven(maven : 'Maven_Apache_3_6_3') {
 					sh 'mvn test'
+				}
 			}
 			
 		}
@@ -22,7 +25,9 @@ pipeline {
 		stage ('Deployment Stage') {
 			
 			steps {
+				withMaven(maven : 'Maven_Apache_3_6_3') {
 					sh 'mvn deploy'
+				}
 			}
 			
 		}
