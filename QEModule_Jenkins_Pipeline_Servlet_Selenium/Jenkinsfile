@@ -7,6 +7,7 @@ pipeline {
 		
 			steps {
 					sh '''
+					cd QEModule_Jenkins_Pipeline_Servlet_Selenium
 					export PATH=$PATH:$MAVEN_HOME/bin
 					mvn clean compile
 					'''
