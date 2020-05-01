@@ -7,7 +7,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 	<properties>
-		<skipTests>true</skipTests>
+		<skipTests>false</skipTests>
 		<localURL>file:/User/Charlie/temp_repo</localURL>
 	</properties>
 	<distributionManagement>
@@ -15,7 +15,7 @@
 			<uniqueVersion>false</uniqueVersion>
 			<id>maven-tomcat-9</id>
 			<name>Tomcat 9 Web Apps</name>
-			<url>file:/User/Charlie/temp_repo</url>
+			<url>${localURL}</url>
 			<layout>default</layout>
 		</repository>
 	</distributionManagement>
