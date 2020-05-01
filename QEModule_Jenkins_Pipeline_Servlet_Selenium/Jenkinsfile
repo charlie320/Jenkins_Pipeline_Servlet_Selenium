@@ -17,7 +17,9 @@ pipeline {
 		stage ('Testing Stage') {
 			
 			steps {
-					sh 'mvn test'
+					sh '''
+					export PATH=$PATH:$MAVEN_HOME/bin
+					mvn test'''
 			}
 			
 		}
@@ -25,7 +27,9 @@ pipeline {
 		stage ('Deployment Stage') {
 			
 			steps {
-					sh 'mvn deploy'
+					sh '''
+					export PATH=$PATH:$MAVEN_HOME/bin
+					mvn deploy'''
 			}
 			
 		}
