@@ -22,7 +22,7 @@ public class IndexPageTest {
 				+ "Programming/Selenium/chromedriver_80");
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.get("http://localhost:8081/jenkins_pipeline_servlet_selenium/HomeServlet");
+		driver.get("http://localhost:8080/JenkinsServletSelenium/HomeServlet");
 	}
 	
 	@AfterClass
@@ -40,7 +40,7 @@ public class IndexPageTest {
 	@Test
 	public void testH2Element() {
 		actual = driver.findElement(By.cssSelector("h2")).getText();
-		expected = "Servlet Application";
+		expected = "Servlet Application with Selenium Tests";
 		assertEquals(actual, expected);
 	}
 }

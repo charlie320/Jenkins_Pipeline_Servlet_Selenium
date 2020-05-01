@@ -7,7 +7,7 @@
 <title>Index</title>
 </head>
 <body>
-	<h2>Servlet Application</h2>
-	<h3>Successfully Deployed on Tomcat using Jenkins!!!!</h3>
+	<h2>Servlet Application with Selenium Tests</h2>
+	<h3>Successfully Deployed on Tomcat using Jenkins Pipeline!!!!</h3>
 </body>
 </html>

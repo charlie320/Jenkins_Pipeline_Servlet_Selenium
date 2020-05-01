@@ -14,7 +14,16 @@ pipeline {
 			}
 		}
 		
-
+		stage ('Testing Stage') {
+			
+			steps {
+					sh '''
+					export PATH=$PATH:$MAVEN_HOME/bin
+					cd QEModule_Jenkins_Pipeline_Servlet_Selenium
+					mvn test'''
+			}
+			
+		}
 
 		stage ('Deployment Stage') {
 			
