@@ -15,7 +15,7 @@
 			<uniqueVersion>false</uniqueVersion>
 			<id>maven-tomcat-9</id>
 			<name>Tomcat 9 Web Apps</name>
-			<url>${localURL}</url>
+			<url>file:/User/Charlie/temp_repo</url>
 			<layout>default</layout>
 		</repository>
 	</distributionManagement>
