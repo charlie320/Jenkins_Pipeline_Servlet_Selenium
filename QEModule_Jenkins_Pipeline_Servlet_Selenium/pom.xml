@@ -13,7 +13,7 @@
 		<repository>
 			<id>maven-tomcat-9</id>
 			<name>Tomcat 9 Web Apps</name>
-			<url>http://localhost:8080/manager/text</url>
+			<url>cp://apache-tomcat-9.0.6/webapps</url>
 		</repository>
 	</distributionManagement>
 	<build>
