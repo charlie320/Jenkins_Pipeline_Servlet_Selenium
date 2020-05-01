@@ -31,7 +31,7 @@ pipeline {
 					sh '''
 					export PATH=$PATH:$MAVEN_HOME/bin
 					cd QEModule_Jenkins_Pipeline_Servlet_Selenium
-					mvn deploy'''
+					mvn install tomcat7:deploy'''
 			}
 			
 		}
