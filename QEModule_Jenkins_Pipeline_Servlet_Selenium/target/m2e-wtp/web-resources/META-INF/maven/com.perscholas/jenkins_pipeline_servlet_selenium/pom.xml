@@ -11,9 +11,11 @@
 	</properties>
 	<distributionManagement>
 		<repository>
+			<uniqueVersion>false</uniqueVersion>
 			<id>maven-tomcat-9</id>
 			<name>Tomcat 9 Web Apps</name>
-			<url>cp://apache-tomcat-9.0.6/webapps</url>
+			<url>file:///temp_repo</url>
+			<layout>default</layout>
 		</repository>
 	</distributionManagement>
 	<build>
