@@ -15,14 +15,13 @@ pipeline {
 		}
 
 
-
 		stage ('Deployment Stage') {
 			
 			steps {
 					sh '''
 					export PATH=$PATH:$MAVEN_HOME/bin
 					cd QEModule_Jenkins_Pipeline_Servlet_Selenium
-					mvn install tomcat7:deploy'''
+					mvn install -DskipTests tomcat7:deploy'''
 			}
 			
 		}
