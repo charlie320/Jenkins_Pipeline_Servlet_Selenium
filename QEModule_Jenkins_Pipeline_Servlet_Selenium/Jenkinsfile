@@ -14,7 +14,6 @@ pipeline {
 			}
 		}
 
-
 		stage ('Deployment Stage') {
 			
 			steps {
@@ -26,8 +25,6 @@ pipeline {
 			
 		}
 		
-		
-		
 		stage ('Testing Stage') {
 			
 			steps {
@@ -36,8 +33,6 @@ pipeline {
 					cd QEModule_Jenkins_Pipeline_Servlet_Selenium
 					mvn test'''
 			}
-			
 		}
-
 	}
 }
