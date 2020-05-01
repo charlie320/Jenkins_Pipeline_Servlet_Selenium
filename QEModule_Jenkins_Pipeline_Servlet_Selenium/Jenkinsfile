@@ -6,8 +6,10 @@ pipeline {
 		stage ('Compile Stage') {
 		
 			steps {
-					sh 'export PATH=$PATH:$MAVEN_HOME/bin
-					sh 'mvn clean compile'
+					sh '''
+					export PATH=$PATH:$MAVEN_HOME/bin
+					mvn clean compile
+					'''
 			}
 		}
 		
