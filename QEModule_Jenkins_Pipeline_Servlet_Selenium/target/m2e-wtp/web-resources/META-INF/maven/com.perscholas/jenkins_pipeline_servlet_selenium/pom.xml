@@ -7,7 +7,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 	<properties>
-		<skipTests>false</skipTests>
+		<skipTests>true</skipTests>
 		<localURL>file:/User/Charlie/temp_repo</localURL>
 	</properties>
 	<distributionManagement>
