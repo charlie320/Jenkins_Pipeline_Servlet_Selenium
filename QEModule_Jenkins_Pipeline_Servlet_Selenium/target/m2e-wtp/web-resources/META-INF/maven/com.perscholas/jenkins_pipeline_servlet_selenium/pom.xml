@@ -59,6 +59,7 @@
 					<server>maven-tomcat-9</server>
 					<url>http://localhost:8080/manager/text</url>
 					<path>/JenkinsSeleniumPipeline</path>
+					<update>true</update>
 				</configuration>
 			</plugin>
 		</plugins>
