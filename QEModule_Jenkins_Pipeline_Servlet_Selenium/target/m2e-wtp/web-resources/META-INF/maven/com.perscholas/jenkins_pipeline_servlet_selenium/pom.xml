@@ -9,6 +9,13 @@
 	<properties>
 		<skipTests>true</skipTests>
 	</properties>
+	<distributionManagement>
+		<repository>
+			<id>maven-tomcat-9</id>
+			<name>Tomcat 9 Web Apps</name>
+			<url>http://localhost:8080/manager/text</url>
+		</repository>
+	</distributionManagement>
 	<build>
 		<plugins>
 			<plugin>
