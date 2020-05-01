@@ -8,17 +8,8 @@
 	<packaging>war</packaging>
 	<properties>
 		<skipTests>false</skipTests>
-		<localURL>file:/User/Charlie/temp_repo</localURL>
 	</properties>
-	<distributionManagement>
-		<repository>
-			<uniqueVersion>false</uniqueVersion>
-			<id>maven-tomcat-9</id>
-			<name>Tomcat 9 Web Apps</name>
-			<url>${localURL}</url>
-			<layout>default</layout>
-		</repository>
-	</distributionManagement>
+
 	<build>
 		<plugins>
 			<plugin>
