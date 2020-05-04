@@ -18,8 +18,8 @@ public class IndexPageTest {
 	
 	@BeforeClass
 	public static void setUp() {
-		System.setProperty("webdriver.chrome.driver", "/Users/Charlie/Documents/"
-				+ "Programming/Selenium/chromedriver");
+		String chromedriverHome = System.getenv("SELENIUM_DRIVERS_HOME") + "/chromedriver";
+		System.setProperty("webdriver.chrome.driver", chromedriverHome);
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get("http://localhost:8080/JenkinsSeleniumPipeline/HomeServlet");
