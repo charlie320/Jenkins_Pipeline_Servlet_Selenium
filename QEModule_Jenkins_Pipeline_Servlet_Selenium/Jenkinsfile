@@ -17,9 +17,8 @@ pipeline {
 			
 			steps {
 					sh '''
-					export PATH=$PATH:$MAVEN_HOME/bin
 					cd QEModule_Jenkins_Pipeline_Servlet_Selenium
-					mvn install -DskipTests tomcat7:deploy'''
+					$MVN_PATH/mvn install -DskipTests tomcat7:deploy'''
 			}
 			
 		}
@@ -28,9 +27,8 @@ pipeline {
 			
 			steps {
 					sh '''
-					export PATH=$PATH:$MAVEN_HOME/bin
 					cd QEModule_Jenkins_Pipeline_Servlet_Selenium
-					mvn test'''
+					$MVN_PATH/mvn test'''
 			}
 		}
 	}
