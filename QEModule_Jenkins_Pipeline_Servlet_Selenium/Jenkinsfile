@@ -8,7 +8,7 @@ pipeline {
 			steps {
 					sh '''
 					cd QEModule_Jenkins_Pipeline_Servlet_Selenium
-					mvn clean compile
+					$MVN_PATH/mvn clean compile
 					'''
 			}
 		}
