@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="3537" started-at="2020-05-04T14:40:32 CDT" finished-at="2020-05-04T14:40:35 CDT">
+  <suite name="Default suite" duration-ms="4456" started-at="2020-05-18T13:21:08 CDT" finished-at="2020-05-18T13:21:12 CDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="3537" started-at="2020-05-04T14:40:32 CDT" finished-at="2020-05-04T14:40:35 CDT">
+    <test name="Default test" duration-ms="4456" started-at="2020-05-18T13:21:08 CDT" finished-at="2020-05-18T13:21:12 CDT">
       <class name="com.perscholas.jenkins_pipeline.web_automation.IndexPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.perscholas.jenkins_pipeline.web_automation.IndexPageTest@74650e52]" name="setUp" is-config="true" duration-ms="3156" started-at="2020-05-04T14:40:32 CDT" finished-at="2020-05-04T14:40:35 CDT">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.perscholas.jenkins_pipeline.web_automation.IndexPageTest@74650e52]" name="setUp" is-config="true" duration-ms="4125" started-at="2020-05-18T13:21:08 CDT" finished-at="2020-05-18T13:21:12 CDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testH2Element()[pri:0, instance:com.perscholas.jenkins_pipeline.web_automation.IndexPageTest@74650e52]" name="testH2Element" duration-ms="70" started-at="2020-05-04T14:40:35 CDT" finished-at="2020-05-04T14:40:35 CDT">
+        <test-method status="PASS" signature="testH2Element()[pri:0, instance:com.perscholas.jenkins_pipeline.web_automation.IndexPageTest@74650e52]" name="testH2Element" duration-ms="71" started-at="2020-05-18T13:21:12 CDT" finished-at="2020-05-18T13:21:12 CDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testH2Element -->
-        <test-method status="PASS" signature="testIndexPageTitle()[pri:0, instance:com.perscholas.jenkins_pipeline.web_automation.IndexPageTest@74650e52]" name="testIndexPageTitle" duration-ms="21" started-at="2020-05-04T14:40:35 CDT" finished-at="2020-05-04T14:40:35 CDT">
+        <test-method status="PASS" signature="testIndexPageTitle()[pri:0, instance:com.perscholas.jenkins_pipeline.web_automation.IndexPageTest@74650e52]" name="testIndexPageTitle" duration-ms="17" started-at="2020-05-18T13:21:12 CDT" finished-at="2020-05-18T13:21:12 CDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testIndexPageTitle -->
-        <test-method status="PASS" signature="shutDown()[pri:0, instance:com.perscholas.jenkins_pipeline.web_automation.IndexPageTest@74650e52]" name="shutDown" is-config="true" duration-ms="216" started-at="2020-05-04T14:40:35 CDT" finished-at="2020-05-04T14:40:35 CDT">
+        <test-method status="PASS" signature="shutDown()[pri:0, instance:com.perscholas.jenkins_pipeline.web_automation.IndexPageTest@74650e52]" name="shutDown" is-config="true" duration-ms="157" started-at="2020-05-18T13:21:12 CDT" finished-at="2020-05-18T13:21:12 CDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shutDown -->
