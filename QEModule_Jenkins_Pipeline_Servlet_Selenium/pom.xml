@@ -6,9 +6,6 @@
 	<artifactId>jenkins_pipeline_servlet_selenium</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-<!-- 	<properties>
-		<skipTests>false</skipTests>
-	</properties> -->
 
 	<build>
 		<plugins>
@@ -39,7 +36,6 @@
 							<value>3</value>
 						</property>
 					</properties>
-<!-- 					<skipTests>${skipTests}</skipTests>-->
 				</configuration>
 			</plugin>
 			<plugin>
