@@ -6,12 +6,10 @@ pipeline {
 		stage ('Compile Stage') {
 		
 			steps {
-					withMaven(maven: 'Maven_Apache_3_6_3'){
-						sh '''
-						cd QEModule_Jenkins_Pipeline_Servlet_Selenium
-						mvn clean compile
-						'''
-					}
+					sh '''
+					cd QEModule_Jenkins_Pipeline_Servlet_Selenium
+					mvn clean compile
+					'''
 			}
 		}
 
