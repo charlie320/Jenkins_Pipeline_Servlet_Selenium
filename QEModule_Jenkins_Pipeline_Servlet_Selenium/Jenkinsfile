@@ -3,12 +3,11 @@ pipeline {
 	
 	stages {
 		stage ('Setup Stage') {
-			when {
-				isUnix
-			}
-			steps {
+
+			isUnix {
 				echo "Mac OS"
 			}
+
 		}
 		stage ('Compile Stage') {
 			steps {
