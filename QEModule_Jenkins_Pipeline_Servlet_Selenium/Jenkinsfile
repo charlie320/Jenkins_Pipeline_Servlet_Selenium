@@ -7,6 +7,9 @@ pipeline {
 			isUnix {
 				echo "Mac OS"
 			}
+			steps {
+				echo "Mac OS"
+			}
 
 		}
 		stage ('Compile Stage') {
