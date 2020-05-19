@@ -4,23 +4,20 @@ pipeline {
 	stages {
 
 		stage ('Compile Stage') {
-			when {
-				expression {isUnix()}
-			}
 			steps {
-				sh '''
-				cd QEModule_Jenkins_Pipeline_Servlet_Selenium
-				$MAVEN_HOME/bin/mvn clean compile
-				'''
-			}
-			when {
-				expression {!isUnix()}
-			}
-			steps {
-				bat '''
-				cd QEModule_Jenkins_Pipeline_Servlet_Selenium_Windows
-				%MAVEN_HOME%/bin/mvn clean compile
-				'''
+				script {
+					if (isUnix() {
+						sh '''
+						cd QEModule_Jenkins_Pipeline_Servlet_Selenium
+						$MAVEN_HOME/bin/mvn clean compile
+						'''
+					} else {
+						bat '''
+						cd QEModule_Jenkins_Pipeline_Servlet_Selenium_Windows
+						%MAVEN_HOME%/bin/mvn clean compile
+						'''
+					}
+				}
 			}
 		}
 
