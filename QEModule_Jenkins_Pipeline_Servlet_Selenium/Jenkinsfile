@@ -5,7 +5,7 @@ pipeline {
 		stage ('Setup Stage') {
 
 			when {
-				System.properties['os_name'].contains('Windows')
+				System.properties['os.name'].contains('Windows')
 			}
 			steps {
 				echo "Windows OS"
