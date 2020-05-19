@@ -13,7 +13,7 @@ pipeline {
 						'''
 					} else {
 						bat '''
-						cd QEModule_Jenkins_Pipeline_Servlet_Selenium_Windows
+						cd QEModule_Jenkins_Pipeline_Servlet_Selenium
 						%MAVEN_HOME%/bin/mvn clean compile
 						'''
 					}
@@ -31,7 +31,7 @@ pipeline {
 						$MAVEN_HOME/bin/mvn install -DskipTests tomcat7:deploy'''
 					} else {
 						bat '''
-						cd QEModule_Jenkins_Pipeline_Servlet_Selenium_Windows
+						cd QEModule_Jenkins_Pipeline_Servlet_Selenium
 						%MAVEN_HOME%/bin/mvn install -DskipTests tomcat7:deploy'''
 					}
 				}
@@ -48,7 +48,7 @@ pipeline {
 						$MAVEN_HOME/bin/mvn test'''
 					} else {
 						bat '''
-						cd QEModule_Jenkins_Pipeline_Servlet_Selenium_Windows
+						cd QEModule_Jenkins_Pipeline_Servlet_Selenium
 						%MAVEN_HOME%/bin/mvn test'''
 					}
 				}
