@@ -26,7 +26,7 @@ pipeline {
 		stage ('Testing Stage') {
 			
 			steps {
-					sh '''
+					powershell '''
 					cd QEModule_Jenkins_Pipeline_Servlet_Selenium
 					$MAVEN_HOME/bin/mvn test'''
 			}
