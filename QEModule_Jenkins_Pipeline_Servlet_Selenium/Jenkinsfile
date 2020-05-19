@@ -5,7 +5,7 @@ pipeline {
 		stage ('Setup Stage') {
 
 			when {
-				expression {isUnix()}
+				isUnix()
 			}
 			steps {
 				echo "Mac OS"
