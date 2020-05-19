@@ -6,7 +6,7 @@ pipeline {
 		stage ('Compile Stage') {
 		
 			steps {
-					powershell & '''
+					powershell '''
 					cd QEModule_Jenkins_Pipeline_Servlet_Selenium
 					$MAVEN_HOME/bin/mvn clean compile
 					'''
@@ -16,7 +16,7 @@ pipeline {
 		stage ('Deployment Stage') {
 			
 			steps {
-					powershell & '''
+					powershell '''
 					cd QEModule_Jenkins_Pipeline_Servlet_Selenium
 					$MAVEN_HOME/bin/mvn install -DskipTests tomcat7:deploy'''
 			}
@@ -26,7 +26,7 @@ pipeline {
 		stage ('Testing Stage') {
 			
 			steps {
-					powershell & '''
+					powershell '''
 					cd QEModule_Jenkins_Pipeline_Servlet_Selenium
 					$MAVEN_HOME/bin/mvn test'''
 			}
