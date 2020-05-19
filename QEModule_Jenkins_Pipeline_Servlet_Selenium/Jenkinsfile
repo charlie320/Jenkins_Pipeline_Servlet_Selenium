@@ -9,7 +9,7 @@ pipeline {
 					if (System.properties['os.name'].contains('Windows') {
 						println "it is Windows"
 					} else {
-						println "it is Max"
+						println "it is Mac"
 					}
 					sh '''
 					cd QEModule_Jenkins_Pipeline_Servlet_Selenium
