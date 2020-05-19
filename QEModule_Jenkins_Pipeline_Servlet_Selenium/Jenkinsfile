@@ -5,10 +5,10 @@ pipeline {
 		stage ('Setup Stage') {
 
 			when {
-				expression {System.properties['os.name'].contains('Windows')}
+				expression {isUnix()}
 			}
 			steps {
-				echo "Windows OS"
+				echo "Mac OS"
 			}
 
 		}
