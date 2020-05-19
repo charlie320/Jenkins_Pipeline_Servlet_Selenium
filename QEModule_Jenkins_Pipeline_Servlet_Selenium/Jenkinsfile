@@ -34,19 +34,24 @@ pipeline {
 						cd QEModule_Jenkins_Pipeline_Servlet_Selenium_Windows
 						%MAVEN_HOME%/bin/mvn install -DskipTests tomcat7:deploy'''
 					}
-				
 				}
-
 			}
-			
 		}
 		
 		stage ('Testing Stage') {
 			
 			steps {
-					sh '''
-					cd QEModule_Jenkins_Pipeline_Servlet_Selenium
-					$MAVEN_HOME/bin/mvn test'''
+				script {
+					if (isUnix()) {
+						sh '''
+						cd QEModule_Jenkins_Pipeline_Servlet_Selenium
+						$MAVEN_HOME/bin/mvn test'''
+					} else {
+						bat '''
+						cd QEModule_Jenkins_Pipeline_Servlet_Selenium_Windows
+						%MAVEN_HOME%/bin/mvn test'''
+					}
+				}
 			}
 		}
 	}
