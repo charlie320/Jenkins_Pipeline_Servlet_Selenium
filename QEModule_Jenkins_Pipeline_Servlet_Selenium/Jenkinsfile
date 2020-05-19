@@ -5,7 +5,7 @@ pipeline {
 		stage ('Setup Stage') {
 
 			when {
-				System.properties.isUnix
+				System.properties.isUnix()
 			}
 			steps {
 				echo "Mac OS"
