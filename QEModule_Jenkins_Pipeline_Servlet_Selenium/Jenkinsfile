@@ -8,10 +8,19 @@ pipeline {
 				expression {isUnix()}
 			}
 			steps {
-					sh '''
-					cd QEModule_Jenkins_Pipeline_Servlet_Selenium
-					$MAVEN_HOME/bin/mvn clean compile
-					'''
+				sh '''
+				cd QEModule_Jenkins_Pipeline_Servlet_Selenium
+				$MAVEN_HOME/bin/mvn clean compile
+				'''
+			}
+			when {
+				expression {!isUnix()}
+			}
+			steps {
+				bat '''
+				cd QEModule_Jenkins_Pipeline_Servlet_Selenium_Windows
+				%MAVEN_HOME%/bin/mvn clean compile
+				'''
 			}
 		}
 
