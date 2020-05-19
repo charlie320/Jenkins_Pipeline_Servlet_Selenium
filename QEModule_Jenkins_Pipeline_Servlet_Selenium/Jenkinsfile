@@ -2,17 +2,11 @@ pipeline {
 	agent any
 	
 	stages {
-		stage ('Setup Stage') {
 
+		stage ('Compile Stage') {
 			when {
 				expression {isUnix()}
 			}
-			steps {
-				echo "Mac OS"
-			}
-
-		}
-		stage ('Compile Stage') {
 			steps {
 					sh '''
 					cd QEModule_Jenkins_Pipeline_Servlet_Selenium
