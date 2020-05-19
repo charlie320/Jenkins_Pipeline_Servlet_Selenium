@@ -6,6 +6,11 @@ pipeline {
 		stage ('Compile Stage') {
 		
 			steps {
+					if (System.properties['os.name'].contains('Windows') {
+						println "it is Windows"
+					} else {
+						println "it is Max"
+					}
 					sh '''
 					cd QEModule_Jenkins_Pipeline_Servlet_Selenium
 					$MAVEN_HOME/bin/mvn clean compile
