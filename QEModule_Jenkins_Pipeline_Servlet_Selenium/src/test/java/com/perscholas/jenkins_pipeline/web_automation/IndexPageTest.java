@@ -45,7 +45,7 @@ public class IndexPageTest {
 	@Test
 	public void testH2Element() {
 		actual = driver.findElement(By.cssSelector("h2")).getText();
-		expected = "Servlet Application with Selenium Tests";
+		expected = "Servlet Application with Selenium Testsxx";
 		assertEquals(actual, expected);
 	}
 }
