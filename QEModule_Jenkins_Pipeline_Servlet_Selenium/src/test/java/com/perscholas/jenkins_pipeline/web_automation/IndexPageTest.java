@@ -18,16 +18,14 @@ public class IndexPageTest {
 	
 	@BeforeClass
 	public static void setUp() {
-		String operatingSystem = System.getProperty("os.name");
-		System.out.println(operatingSystem);
-		String driverString = null;
-		if (operatingSystem.contains("Windows")) {
-			driverString = "\\chromedriver.exe";
+		String driverName = null;
+		if (System.getProperty("os.name").contains("Windows")) {
+			driverName = "\\chromedriver.exe";
 		} else {
-			driverString = "/chromedriver";
+			driverName = "/chromedriver";
 		}
 		
-		String chromedriverHome = System.getenv("SELENIUM_DRIVERS_HOME") + driverString;
+		String chromedriverHome = System.getenv("SELENIUM_DRIVERS_HOME") + driverName;
 		System.setProperty("webdriver.chrome.driver", chromedriverHome);
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
