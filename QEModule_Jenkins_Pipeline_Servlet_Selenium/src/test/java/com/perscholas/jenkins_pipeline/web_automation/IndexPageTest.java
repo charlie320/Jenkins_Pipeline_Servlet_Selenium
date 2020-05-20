@@ -20,12 +20,13 @@ public class IndexPageTest {
 	public static void setUp() {
 		String driverName = null;
 		if (System.getProperty("os.name").contains("Windows")) {
+			// Windows file name
 			driverName = "\\chromedriver.exe";
 		} else {
+			// Mac/Linux file name
 			driverName = "/chromedriver";
 		}
-		
-//		String chromedriverHome = System.getenv("SELENIUM_DRIVERS_HOME") + driverName;
+		// Set webdriver.chrome.driver to SELENIUN_DRIVERS_HOME + driverName
 		System.setProperty("webdriver.chrome.driver", System.getenv("SELENIUM_DRIVERS_HOME") + driverName);
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
