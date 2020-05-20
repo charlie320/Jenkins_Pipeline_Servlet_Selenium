@@ -6,13 +6,14 @@ pipeline {
 		stage ('Compile Stage') {
 			steps {
 				script {
-					cd QEModule_Jenkins_Pipeline_Servlet_Selenium
 					if (isUnix()) {
 						sh '''
+						cd QEModule_Jenkins_Pipeline_Servlet_Selenium
 						$MAVEN_HOME/bin/mvn clean compile
 						'''
 					} else {
 						bat '''
+						cd QEModule_Jenkins_Pipeline_Servlet_Selenium
 						%MAVEN_HOME%/bin/mvn clean compile
 						'''
 					}
