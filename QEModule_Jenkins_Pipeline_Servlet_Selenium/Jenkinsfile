@@ -32,7 +32,7 @@ pipeline {
 					} else {
 						bat '''
 						cd QEModule_Jenkins_Pipeline_Servlet_Selenium
-						%MAVEN_HOME%/bin/mvn install -DskipTests tomcat7:deploy'''
+						mvn install -DskipTests tomcat7:deploy'''
 					}
 				}
 			}
@@ -49,7 +49,7 @@ pipeline {
 					} else {
 						bat '''
 						cd QEModule_Jenkins_Pipeline_Servlet_Selenium
-						%MAVEN_HOME%/bin/mvn test'''
+						mvn test'''
 					}
 				}
 			}
