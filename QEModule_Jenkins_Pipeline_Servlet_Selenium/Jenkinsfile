@@ -9,7 +9,7 @@ pipeline {
 					if (isUnix()) {
 						sh '''
 						cd QEModule_Jenkins_Pipeline_Servlet_Selenium
-						$MAVEN_HOME/bin/mvn clean compile
+						mvn clean compile
 						'''
 					} else {
 						bat '''
