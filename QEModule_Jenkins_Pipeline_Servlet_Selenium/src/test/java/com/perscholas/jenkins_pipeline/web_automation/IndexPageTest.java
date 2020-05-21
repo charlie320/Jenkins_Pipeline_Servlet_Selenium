@@ -27,7 +27,7 @@ public class IndexPageTest {
 		System.setProperty("webdriver.chrome.driver", System.getenv("SELENIUM_DRIVERS_HOME") + driverName);
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.get("http://localhost:8080/JenkinsSeleniumPipeline/HomeServlet");
+		driver.get("http://localhost:8080/jenkins_pipeline_servlet_selenium/HomeServlet");
 	}
 	
 	@AfterClass
