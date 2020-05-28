@@ -1,3 +1,4 @@
 pom.properties
-Users
-test-output
+Users/
+test-output/
+target/
