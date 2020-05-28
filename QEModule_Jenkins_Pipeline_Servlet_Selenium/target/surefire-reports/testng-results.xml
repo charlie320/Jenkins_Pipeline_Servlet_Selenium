@@ -2,12 +2,12 @@
 <testng-results skipped="2" failed="0" ignored="0" total="2" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="189" started-at="2020-05-21T14:36:44 CDT" finished-at="2020-05-21T14:36:44 CDT">
+  <suite name="Surefire suite" duration-ms="169" started-at="2020-05-28T14:14:36 CDT" finished-at="2020-05-28T14:14:36 CDT">
     <groups>
     </groups>
-    <test name="Surefire test" duration-ms="189" started-at="2020-05-21T14:36:44 CDT" finished-at="2020-05-21T14:36:44 CDT">
+    <test name="Surefire test" duration-ms="169" started-at="2020-05-28T14:14:36 CDT" finished-at="2020-05-28T14:14:36 CDT">
       <class name="com.perscholas.jenkins_pipeline.web_automation.IndexPageTest">
-        <test-method status="FAIL" signature="setUp()[pri:0, instance:com.perscholas.jenkins_pipeline.web_automation.IndexPageTest@6500df86]" name="setUp" is-config="true" duration-ms="123" started-at="2020-05-21T14:36:44 CDT" finished-at="2020-05-21T14:36:44 CDT">
+        <test-method status="FAIL" signature="setUp()[pri:0, instance:com.perscholas.jenkins_pipeline.web_automation.IndexPageTest@6500df86]" name="setUp" is-config="true" duration-ms="105" started-at="2020-05-28T14:14:36 CDT" finished-at="2020-05-28T14:14:36 CDT">
           <exception class="java.lang.IllegalStateException">
             <message>
               <![CDATA[The driver executable does not exist: /Users/Charlie/Documents/Programming/Per Scholas/ClassroomGitRepository/QEModule_Jenkins_Pipeline_Servlet_Selenium/QEModule_Jenkins_Pipeline_Servlet_Selenium/null/chromedriver]]>
@@ -60,7 +60,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="testH2Element()[pri:0, instance:com.perscholas.jenkins_pipeline.web_automation.IndexPageTest@6500df86]" name="testH2Element" duration-ms="0" started-at="2020-05-21T14:36:44 CDT" finished-at="2020-05-21T14:36:44 CDT">
+        <test-method status="SKIP" signature="testH2Element()[pri:0, instance:com.perscholas.jenkins_pipeline.web_automation.IndexPageTest@6500df86]" name="testH2Element" duration-ms="0" started-at="2020-05-28T14:14:36 CDT" finished-at="2020-05-28T14:14:36 CDT">
           <exception class="java.lang.IllegalStateException">
             <message>
               <![CDATA[The driver executable does not exist: /Users/Charlie/Documents/Programming/Per Scholas/ClassroomGitRepository/QEModule_Jenkins_Pipeline_Servlet_Selenium/QEModule_Jenkins_Pipeline_Servlet_Selenium/null/chromedriver]]>
@@ -113,7 +113,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testH2Element -->
-        <test-method status="SKIP" signature="testIndexPageTitle()[pri:0, instance:com.perscholas.jenkins_pipeline.web_automation.IndexPageTest@6500df86]" name="testIndexPageTitle" duration-ms="0" started-at="2020-05-21T14:36:44 CDT" finished-at="2020-05-21T14:36:44 CDT">
+        <test-method status="SKIP" signature="testIndexPageTitle()[pri:0, instance:com.perscholas.jenkins_pipeline.web_automation.IndexPageTest@6500df86]" name="testIndexPageTitle" duration-ms="0" started-at="2020-05-28T14:14:36 CDT" finished-at="2020-05-28T14:14:36 CDT">
           <exception class="java.lang.IllegalStateException">
             <message>
               <![CDATA[The driver executable does not exist: /Users/Charlie/Documents/Programming/Per Scholas/ClassroomGitRepository/QEModule_Jenkins_Pipeline_Servlet_Selenium/QEModule_Jenkins_Pipeline_Servlet_Selenium/null/chromedriver]]>
@@ -166,7 +166,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testIndexPageTitle -->
-        <test-method status="SKIP" signature="shutDown()[pri:0, instance:com.perscholas.jenkins_pipeline.web_automation.IndexPageTest@6500df86]" name="shutDown" is-config="true" duration-ms="-1590089804296" started-at="2020-05-21T14:36:44 CDT" finished-at="1969-12-31T18:00:00 CST">
+        <test-method status="SKIP" signature="shutDown()[pri:0, instance:com.perscholas.jenkins_pipeline.web_automation.IndexPageTest@6500df86]" name="shutDown" is-config="true" duration-ms="-1590693276212" started-at="2020-05-28T14:14:36 CDT" finished-at="1969-12-31T18:00:00 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shutDown -->
