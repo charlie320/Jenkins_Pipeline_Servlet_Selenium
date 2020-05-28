@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.perscholas.jenkins_pipeline.web_automation.IndexPageTest
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 1, Errors: 0, Skipped: 3, Time elapsed: 0.839 s <<< FAILURE! - in com.perscholas.jenkins_pipeline.web_automation.IndexPageTest
-com.perscholas.jenkins_pipeline.web_automation.IndexPageTest.setUp  Time elapsed: 0.487 s  <<< FAILURE!
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 3, Time elapsed: 0.836 s <<< FAILURE! - in com.perscholas.jenkins_pipeline.web_automation.IndexPageTest
+com.perscholas.jenkins_pipeline.web_automation.IndexPageTest.setUp  Time elapsed: 0.502 s  <<< FAILURE!
 java.lang.IllegalStateException: The driver executable does not exist: /Users/Charlie/Documents/Programming/Per Scholas/ClassroomGitRepository/QEModule_Jenkins_Pipeline_Servlet_Selenium/QEModule_Jenkins_Pipeline_Servlet_Selenium/null/chromedriver
 	at com.perscholas.jenkins_pipeline.web_automation.IndexPageTest.setUp(IndexPageTest.java:28)
 
