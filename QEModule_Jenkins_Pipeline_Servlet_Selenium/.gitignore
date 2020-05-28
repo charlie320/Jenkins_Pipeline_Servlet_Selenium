@@ -1,5 +1,6 @@
 pom.properties
 */build/
 test-output/
-*/target/
+target/
+target2/
 Users/
