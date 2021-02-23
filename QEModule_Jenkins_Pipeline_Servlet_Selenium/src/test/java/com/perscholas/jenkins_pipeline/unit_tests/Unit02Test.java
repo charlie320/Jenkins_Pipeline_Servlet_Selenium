@@ -2,13 +2,13 @@ package com.perscholas.jenkins_pipeline.unit_tests;
 
 import org.testng.annotations.Test;
 
-public class UnitTest01 {
+public class Unit02Test {
 	@Test
-	public void unitTest01Method01() {
+	public void unitTest02Method01() {
 		System.out.println("unitTest02Method01");
 	}
 	@Test
-	public void unitTest01Method02() {
+	public void unitTest02Method02() {
 		System.out.println("unitTest02Method02");
 	}
 }
